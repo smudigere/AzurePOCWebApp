@@ -15,6 +15,12 @@
 			{
 				document.write('Permission to access computer name is denied' + '<br />');
 			}
+			
+			var o = Math.round, r = Math.random, s = 255;
+
+			var color = 'rgba(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ',' + r().toFixed(1) + ')';
+
+			document.body.style.background = color;
 		</Script>
 	</Body>
 </html>
