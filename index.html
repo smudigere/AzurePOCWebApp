@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Azure Automation</title>
+  </head>
+	<BODY bgcolor="#afafaf">
+		<Script Type = "text/JavaScript">
+			try
+			{
+				var ax = new ActiveXObject("WScript.Network");
+				document.write('Host server name: ' + '<h1>' + ax.ComputerName + '<br/>' + '</h1>');
+			}
+			catch (e)
+			{
+				document.write('Permission to access computer name is denied' + '<br />');
+			}
+		</Script>
+	</Body>
+</html>
